@@ -17,8 +17,7 @@ public class Ejercicio05_AñoBisiesto {
            System.out.println("El año " + anio + " es BISIESTO. ");
         else 
            System.out.println("El año " + anio + " no es bisiesto.");
-        
-     }
+       }
    }
 
 /***
