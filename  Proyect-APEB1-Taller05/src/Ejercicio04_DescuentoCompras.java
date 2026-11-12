@@ -10,19 +10,20 @@ import java.util.Scanner;
  */
 public class Ejercicio04_DescuentoCompras {
     public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
-        double precio, descuento, precioFinal;
+        double precio;
+        Scanner tcl = new Scanner(System.in);
         System.out.println("Ingrese el precio del producto:");
-        precio = entrada.nextDouble();
-        if (precio > 100) {
-            descuento = precio * 0.10;
-        } else {
-            descuento = 0;
-        }
-        precioFinal = precio - descuento;
-        System.out.println("Precio original: $" + precio);
-        System.out.println("Descuento: $" + descuento);
-        System.out.println("Precio final: $" + precioFinal);
+        precio = tcl.nextInt();
+        if (precio > 100)
+            precio = precio * 0.9;
+        System.out.println(precio);
 
     }
 }
+/**
+ *run:
+Ingrese el precio del producto:
+1000
+900.0
+BUILD SUCCESSFUL (total time: 3 seconds) 
+ */

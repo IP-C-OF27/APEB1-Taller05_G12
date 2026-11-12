@@ -13,13 +13,11 @@ public class Ejercicio05_AñoBisiesto {
         int anio;
         System.out.print("Por favor, ingrese un año: ");
         anio = teclado.nextInt();
-        if ((anio % 4 == 0 && anio % 100 != 0) || (anio % 400 == 0)) {
-        System.out.println("¡Felicidades! El año " + anio + " es BISIESTO. "
-                + "¡Tiene un día extra en febrero! 🎉");
-        }
-        else {
-            System.out.println("El año " + anio + " no es bisiesto.");
-        }
+        if(anio % 4 == 0)
+           System.out.println("El año " + anio + " es BISIESTO. ");
+        else 
+           System.out.println("El año " + anio + " no es bisiesto.");
+        
      }
    }
 

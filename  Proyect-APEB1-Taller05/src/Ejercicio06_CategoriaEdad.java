@@ -14,18 +14,12 @@ public class Ejercicio06_CategoriaEdad {
         int edad;
         System.out.print("Ingrese su edad: ");
         edad = entrada.nextInt();
-        if (edad >= 0 && edad <= 11) {
+        if (edad >= 0 && edad <= 11) 
             System.out.println("Categoria: Niño");
-        } 
-        else if (edad >= 12 && edad <= 17) {
+        if (edad >= 12 && edad <= 17)
             System.out.println("Categoria: Adolescente");
-        } 
-        else if (edad >= 18) {
+        if (edad >= 18)
             System.out.println("Categoria: Adulto");
-        } 
-        else {
-            System.out.println("Edad no valida");
-        }
     }
     
 }
